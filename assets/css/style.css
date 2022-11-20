@@ -80,13 +80,6 @@ section {
     padding: 60px 0;
 }
 
-.spacer {
-    background-image: url(../img/wave-haikei.svg);
-    height: 42vh;
-    width: 100%;
-
-  
-}
 
 #gallery {
     width: 100%;
@@ -108,11 +101,10 @@ section {
     align-items: center;
     background-image: url(../img/Dragonflight_Cinematic_Still.jpg);
     font-size: 3rem;
-    color: rgb(88 199 250 / 0%);
     box-shadow: rgba(3, 8, 20, 0.1) 0px 0.15rem 0.5rem, rgba(2, 8, 20, 0.1) 0px 0.075rem 0.175rem;
     height: 100%;
     width: 100%;
-    border-radius: 12px;
+    border-radius: 10px;
     transition: all 500ms;
     overflow: hidden;
     background-size: cover;
@@ -136,13 +128,14 @@ section {
     display: grid;
     gap: 1rem;
     height: 90vh;
-
+    
     grid-template-areas: 
     'a a a b'
     'c d e b'
     'f g h b'
     'f g i b'
     'j k k l';
+  
 }
 
 
@@ -182,3 +175,25 @@ section {
 .card:nth-child(12) {
     grid-area: l;
 }
+
+
+/*scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    margin-top: 7vh;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(109, 103, 103, 0.644);
+    border-radius: 20px;
+  }
+  
+  @media (min-width: 801px) {
+    body {
+      overflow: overlay;
+    }
+  }
+  
